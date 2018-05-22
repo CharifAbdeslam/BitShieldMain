@@ -1,5 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Mina:400,700');
+$white: #D2D3D3;
+$black: #212121;
+$orange: #F27420;
+$blue: #021521;
+$grey: #1B262D;
+$greyHard: #504f4f;
+$gerIntense: #090909;
+$red:#F95A62;
+$green:#78C653;
+$guardian: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
+
+.text-danger{
+  color:$red !important;
+}
+
+.text-success{
+  color:$green !important;
+}
+
+.white-text{
+  color:$white;
+}
+
+.text-grey{
+  color:grey !important;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Mina', sans-serif;
+
+  overflow-x: hidden;
+  .login-failed {
+    color: red;
+    font-weight: 700;
+  }
+  background-color: #F5F5F5;
+
+  .from-warraper {
+    border-radius: 15px;
+    background-image: $guardian;
+    border:1px solid $orange;
+  }
+.logintosigntext{
+  color:$white;
+  cursor:pointer;
+  &:hover{
+    color:white;
+  }
+}
+  .login-wrapper {
+    label {
+      margin: 0.5rem 0;
+      color: $white;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .features-wrapper {
+    background-color: white;
+    h3,
+    h4,
+    p {
+      color: $greyHard;
+    }
+  }
+
+  .crypto-table {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+
+  .liveprice-wrapper {
+    background-image: $guardian;
+    padding: 15px;
+  }
+
+  .live-price-table {
+    color: $white;
+    font-size: 12px;
+
+    thead th {
+      border-bottom: none;
+      border-top: none;
+    }
+
+    td,
+    th {
+      border-top: 0.1px solid $grey;
+    }
+  }
+
+  .fadein-appear {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .fadein-appear.fadein-appear-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s ease;
+  }
+
+  .btn-outline-warning {
+    color: $orange;
+    border-color: $orange;
+
+    &:hover {
+      background-color: $orange;
+      border-color: $orange;
+    }
+  }
+
+  .landing {
+    min-height: 100vh;
+    background-image: $guardian;
+
+    a {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      line-height: 3;
+      text-decoration: none;
+    }
+
+    .dropdown-toggle {
+      line-height: 1.9;
+    }
+  }
+
+  .logo-menu {
+    margin-bottom: 9px;
+  }
+
+  .navbar-nav {
+    a {
+      color: $white;
+      font-size: 14px;
+
+      &:hover {
+        color: white;
+      }
+    }
+
+    button {
+      font-size: 14px;
+      line-height: 1;
+
+      &:active {
+        background-color: $black;
+      }
+    }
+
+    .login-nav {
+      border-right: 1px solid #D2D3D3;
+    }
+  }
+
+  .nav-login {
+    a {
+      color: orange;
+    }
+  }
+
+  .landing-banner {
+    h1 {
+      color: $white;
+      font-weight: 700;
+    }
+
+    p {
+      color: $white;
+    }
+  }
 }

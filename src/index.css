@@ -1,4 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Mina:400,700");
+.text-danger {
+  color: #F95A62 !important; }
+
+.text-success {
+  color: #78C653 !important; }
+
+.white-text {
+  color: #D2D3D3; }
+
+.text-grey {
+  color: grey !important; }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: 'Mina', sans-serif;
+  overflow-x: hidden;
+  background-color: #F5F5F5; }
+  body .login-failed {
+    color: red;
+    font-weight: 700; }
+  body .from-warraper {
+    border-radius: 15px;
+    background-image: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
+    border: 1px solid #F27420; }
+  body .logintosigntext {
+    color: #D2D3D3;
+    cursor: pointer; }
+    body .logintosigntext:hover {
+      color: white; }
+  body .login-wrapper label {
+    margin: 0.5rem 0;
+    color: #D2D3D3; }
+  body .login-wrapper span {
+    font-weight: 700; }
+  body .features-wrapper {
+    background-color: white; }
+    body .features-wrapper h3,
+    body .features-wrapper h4,
+    body .features-wrapper p {
+      color: #504f4f; }
+  body .crypto-table {
+    font-size: 1.2rem;
+    line-height: 1; }
+  body .liveprice-wrapper {
+    background-image: linear-gradient(9deg, #000F18 50%, #0D3044 100%);
+    padding: 15px; }
+  body .live-price-table {
+    color: #D2D3D3;
+    font-size: 12px; }
+    body .live-price-table thead th {
+      border-bottom: none;
+      border-top: none; }
+    body .live-price-table td,
+    body .live-price-table th {
+      border-top: 0.1px solid #1B262D; }
+  body .fadein-appear {
+    opacity: 0;
+    transform: translateY(20px); }
+  body .fadein-appear.fadein-appear-active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s ease; }
+  body .btn-outline-warning {
+    color: #F27420;
+    border-color: #F27420; }
+    body .btn-outline-warning:hover {
+      background-color: #F27420;
+      border-color: #F27420; }
+  body .landing {
+    min-height: 100vh;
+    background-image: linear-gradient(9deg, #000F18 50%, #0D3044 100%); }
+    body .landing a {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+      line-height: 3;
+      text-decoration: none; }
+    body .landing .dropdown-toggle {
+      line-height: 1.9; }
+  body .logo-menu {
+    margin-bottom: 9px; }
+  body .navbar-nav a {
+    color: #D2D3D3;
+    font-size: 14px; }
+    body .navbar-nav a:hover {
+      color: white; }
+  body .navbar-nav button {
+    font-size: 14px;
+    line-height: 1; }
+    body .navbar-nav button:active {
+      background-color: #212121; }
+  body .navbar-nav .login-nav {
+    border-right: 1px solid #D2D3D3; }
+  body .nav-login a {
+    color: orange; }
+  body .landing-banner h1 {
+    color: #D2D3D3;
+    font-weight: 700; }
+  body .landing-banner p {
+    color: #D2D3D3; }
